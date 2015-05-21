@@ -1,0 +1,33 @@
+defaults: &defaults
+  instagram_client_id: "b893ce3cb8134be1a7bcc7beae713f8f"
+  instagram_client_secret: "a056bfe2c94942ff873a09eca780934c"
+  instagram_access_token: "2088895626.b893ce3.167cc960c1a242a4bbeebde9029c0928"
+  default_image_search_tag: "nepalquake"
+  # If populated, the next three fields will appear at the end of page titles as "application_name - division_name - organization_name"
+  application_name: "DHSI lentil test install"
+  division_name: "Division Name"
+  division_url: "http://example.com/division_url"
+  organization_name: "University name"
+  meta_description: "A short description to include in the meta description tag"
+  base_image_file_dir: "/tmp/harvested"
+  donor_agreement_text: "The text for your donor agreement that will be submitted as a comment"
+  contact_email: "my_project@example.com"
+  feed_description: "Description of this feed"
+  # Uncomment to enable Google Analytics tracking
+  # google_analytics_tracker: "UA-XXXXXXXX-XX"
+
+development:
+  <<: *defaults
+  # Add or override config options here
+
+test:
+  <<: *defaults
+  # Add or override config options here
+
+staging:
+  <<: *defaults
+  # Add or override config options here
+
+production:
+  <<: *defaults
+  # Add or override config options here
